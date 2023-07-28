@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: rgba(0, 0, 255, 0.425);
+    text-align: center;
+    padding: 3% 0;
+    color: white;
+    font: normal 18px arial;
+    
+}
+#Lista-cadastro{
+    display: flex;
+    margin: 20px 0;
+}
+#Lista-cadastro input[type='text']{
+    flex: 1;
+    height: 40px;
+    padding-left: 14px;
+}
+#Lista-produtos-single{
+    padding: 10 0px;
+    margin: 20px 0;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
+#Lista-produtos-single h3{
+    flex: 1;
+}
+h3#valor{
+    text-align: right;
+    font-size: 17px;
+
+}
+h3#valor > span{
+    background-color: rgba(0, 0, 255, 0.658);
+    border-radius: 5cm;
+    padding: 8px 10px;
+}
+#Resultado{
+    text-align: right;
+}

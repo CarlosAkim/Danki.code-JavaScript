@@ -1,0 +1,22 @@
+header{
+    background-color: rgb(36, 46, 128);
+    padding: 8px 30px;
+    text-align: center;
+    border-radius: 30px;
+    font: normal 30px arial;    
+}
+#jogo img{
+    max-width: 200px;
+    opacity: 0.2;
+    cursor: pointer;
+    margin-left: 15%;
+}
+#inimigo-jogo img{
+    max-width: 200px;
+    opacity: 0.2;
+    cursor: pointer;
+    margin-left:  22cm;;
+}
+#configuracao{
+    display: flex;
+}

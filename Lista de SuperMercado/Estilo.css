@@ -59,3 +59,8 @@ h3#valor > span{
     font: normal 16px arial;   
     
 }
+#limpar{
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+}

@@ -2,6 +2,7 @@ var elemento = document.querySelectorAll("#jogo div > img")
 var inimigo = document.querySelectorAll("#inimigo-jogo div > img")
 var playerOPT = ''
 var inimigoOPT = ''
+var res = document.querySelector("#resultado")
 
 function zerarPlayer(){
     for(var i=0;i<elemento.length;i++){
@@ -41,23 +42,25 @@ function inimigoJoga(){
 
 function resultado(){
     if (playerOPT == "papel" && inimigoOPT == "papel"){
-        window.alert('empate')
+        res.innerHTML = `Resultado: Empate`
     }else if (playerOPT == "papel" && inimigoOPT == "pedra"){
-        window.alert('Vitoria do player 1, Papel ganha de Pedra')
+        res.innerHTML = `Resultado: Vitoria Player 1`
     }else if (playerOPT == "papel" && inimigoOPT == "tesoura"){
-        window.alert('Vitoria da player 2, Papel perde para tesoura ')
+        res.innerHTML = `Resultado: Vitoria Player 2`
+
     }else if (playerOPT == "pedra" && inimigoOPT == "pedra"){
-        window.alert('empate')
+        res.innerHTML = `Resultado: Empate`
     }else if (playerOPT == "pedra" && inimigoOPT == "tesoura"){
-        window.alert('Vitoria da player 1, Pedra ganha de Tesoura ')
+        res.innerHTML = `Resultado: Vitoria Player 1`
     }else if (playerOPT == "pedra" && inimigoOPT == "papel"){
-        window.alert('Vitoria da player 2, Pedra perde para papel ')
+        res.innerHTML = `Resultado: Vitoria Player 2`
+
     }else if (playerOPT == "tesoura" && inimigoOPT == "tesoura"){
-        window.alert('empate')
+        res.innerHTML = `Resultado: Empate`
     }else if (playerOPT == "tesoura" && inimigoOPT == "papel"){
-        window.alert('Vitoria da player 1, Tesoura ganha de Papel ')
+        res.innerHTML = `Resultado: Vitoria Player 1`
     }else if (playerOPT == "tesoura" && inimigoOPT == "pedra"){
-        window.alert('Vitoria da player 2, Tesoura perde para Pedra ')
+        res.innerHTML = `Resultado: Vitoria Player 2`
     }
 
 }

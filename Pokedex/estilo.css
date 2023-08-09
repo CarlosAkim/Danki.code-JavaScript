@@ -42,3 +42,9 @@ h1{
     #pokemon{width: 100%; text-align: center;}
     #pokemon img{width: 300px;}   
 }
+#selecao{
+    width: 100%;
+    height: 45px;
+    padding: 2%;
+
+}

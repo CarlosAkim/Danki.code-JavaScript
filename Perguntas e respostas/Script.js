@@ -9,6 +9,7 @@ for( var i in elementos){
         let marcado = e.target.value
 
         if(marcado == 'correta'){
+            //comando 'previousElementSibling' pega o elemente anterios ao que foi mencionado.
             let el = e.target.previousElementSibling.style.backgroundColor = 'green'
         }else {
             let el = e.target.previousElementSibling.style.backgroundColor = 'red'
